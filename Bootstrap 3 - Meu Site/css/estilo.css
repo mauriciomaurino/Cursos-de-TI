@@ -1,0 +1,197 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    padding-top: 50px;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 15px;
+    min-height: 100vh;
+}
+
+section.divslider {
+    min-height: 150vh;
+}
+
+section#contato {
+    min-height: 80vh;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url(../img/alum.jpg)
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><&gt;&lt;filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+img.grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+small {
+    color: blue;
+}
+
+div h1 small {
+    color: #fff;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.navbar-brend {
+    font-weight: 700;
+}
+
+.slide_Full {
+    width: 100%;
+}
+
+.divslider {
+    padding-bottom: 15px;
+    background: url(../img/alum.jpg)
+}
+
+.div_colorida {
+    background: url(../img/alum.jpg)
+}
+
+.div_colorida2 {
+    background: url(../img/brushed_alu_dark_@2X.png)
+}
+
+.dados {
+    color: #fff;
+}
+
+.img_center * {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.img_max {
+    max-width: 300px;
+}
+
+.img_mim {
+    min-width: 90px;
+}
+
+.servicos_item h4 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.servicos_btn_todosServicos {
+    margin-top: 25px;
+}
+
+.portifolio_row {
+    margin-bottom: 20px;
+}
+
+.portifolio_row:last-child {
+    margin-bottom: 0px;
+}
+
+.contato textarea {
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.contato .aviso {
+    padding: 15px;
+}
+
+.section_interna {
+    padding-top: 0px;
+}
+
+.form_login {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #eee;
+}
+
+.form_login input {
+    margin-bottom: 10px;
+}
+
+.home_top {
+    padding-top: 75px;
+    min-height: 11vh;
+}
+
+.panel {
+    margin-bottom: 2px
+}
+
+.conteudo_painel {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 3px 8px 5px #888;
+}
+
+.conteudo_painel_int {
+    padding: 12px;
+}
+
+.panel-body {
+    overflow-y: auto
+}
+
+.nav-pills li a {
+    background: #9cd;
+}
+
+.nav_button_menu {
+    margin-top: 8px;
+}
+
+.fa-linkedin-square {
+    color: rgba( 0, 123, 182, 0.7);
+}
+
+.fa-linkedin-square:hover {
+    color: rgba( 0, 123, 182, 1);
+}
+
+.fa-facebook-square {
+    color: rgba(59, 89, 152, 0.8);
+}
+
+.fa-facebook-square:hover {
+    color: rgba(59, 89, 152, 1);
+}
+
+.fa-google-plus-square {
+    color: rgba(221, 75, 57, 0.7);
+}
+
+.fa-google-plus-square:hover {
+    color: rgba(221, 75, 57, 1);
+}
+
+.fa-whatsapp {
+    color: rgba(52, 175, 35, 1);
+}
