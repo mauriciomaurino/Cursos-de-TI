@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Curso Bootstrap</title>
+    <!--define a viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--adicionar CSS Bootstrap-->
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+    <!--adicionar CSS Bootstrap-->
+    <link href="css/estilo.css" rel="stylesheet" media="all"> </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pageheader">
+                    <h1>Janelas Modais</h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Abrir Janela modal grande</button>
+                    <!-- janel modal   -->
+                    <div class="modal fade" id="modal01" role="dialog" tabindex="-1" area-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span> <span class="sr-only">Fechar janela modal</span> </button>
+                                    <h4 class="modal-title">Janela modal</h4> </div>
+                                <div class="modal-body">
+                                    <p>Conteudo da Janela modal</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-prymary" data-dismiss="modal">Outro botão</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal02">Abrir Janela modal pequena</button>
+                    <!-- janel modal   -->
+                    <div class="modal" id="modal02" role="dialog" tabindex="-1" area-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span> <span class="sr-only">Fechar janela modal</span> </button>
+                                    <h4 class="modal-title">Janela modal</h4> </div>
+                                <div class="modal-body">
+                                    <p>Conteudo da Janela modal</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-prymary" data-dismiss="modal">Outro botão</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim janel modal   -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

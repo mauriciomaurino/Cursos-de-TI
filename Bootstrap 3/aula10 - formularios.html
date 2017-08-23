@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Curso Bootstrap</title>
+    <!--define a viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--adicionar CSS Bootstrap-->
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--adicionar CSS Bootstrap-->
+    <link href="css/estilo.css" rel="stylesheet" media="screen"> </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-horizontal">
+                    <div class="form-group has-success has-feedback">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> <span class="glyphicon glyphicon-ok form-control-feedback"></span></div>
+                    </div>
+                    <div class="form-group has-error">
+                        <label for="tipo" class="col-xs-2 control-label">Tipo:</label>
+                        <div class="col-xs-10">
+                            <select class="form-control">
+                                <option>Selecione uma opção</option>
+                                <option>Pessoa fisica</option>
+                                <option>Pessoa juridica</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group has-danger">
+                        <label for="tipo" class="col-xs-2 control-label">Selecione:</label>
+                        <div class="col-xs-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id1" value="1">1 </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id2" value="2">2 </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id3" value="3">3 </label>
+                        </div>
+                    </div>
+                    <div class="form-group has-error has-feedback">
+                        <label class="col-xs-2 control-label">Seu email:</label>
+                        <div class="col-xs-10">
+                            <p class="form-control-static">atendimento@web.com.br</p><span class="glyphicon glyphicon-remove form-control-feedback"></span> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button type="submit" class="btn btn-defaut">Enviar formulário</button>
+                        </div>
+                    </div>
+                    <div class="form-group has-warning has-feedback">
+                        <label for="nome" class="col-xs-2 control-label">Warning:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /><span class="glyphicon glyphicon-warning-sign form-control-feedback"> </span></div>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="nome" class="col-xs-2 control-label">Sucess:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> <span class="glyphicon glyphicon-ok form-control-feedback"></span></div>
+                    </div>
+                    <div class="form-group has-error has-feedback">
+                        <label for="nome" class="col-xs-2 control-label">Error:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="nome" class="col-xs-2 control-label">Warning:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="nome" class="col-xs-2 control-label">Sucess:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="nome" class="col-xs-2 control-label">Error:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:" /> <span class="help-block">Texto de ajuda: xxx.xxx.xxx-xx</span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="js/main.js"></script>-->
+    <script></script>
+</body>
+
+</html>
