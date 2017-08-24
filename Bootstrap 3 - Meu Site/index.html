@@ -501,45 +501,49 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
+                                                            <tr class="danger">
+                                                                <td>ATENÇÃO:</td>
+                                                                <td>Os tres primeiros comandos são necessarios para criar um repositorio local, clonar o que estiver no remoto e lincar o remoto ao local.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>git init</td>
+                                                                <td>criar um novo repositório (crie uma pasta e de o comando dentro da pasta)</td>
+                                                            </tr>
                                                             <tr>
                                                                 <td>git clone usuário@servidor:/caminho/para/o/repositório</td>
                                                                 <td>fazer clone do repositório remoto para o local</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>git init</td>
-                                                                <td>criar um novo repositorio (crie uma pasta e de o comando dentro da pasta)</td>
+                                                                <td>git remote add origin git@github.com:usuario/xyz.git</td>
+                                                                <td>conectar meu repositório a um servidor remoto</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git status</td>
-                                                                <td>verificar o satus de um repositorio se tem algo a commitar, por exemplo. Irámostrar em vermelho ou verde, dependendo se está ou nao no container</td>
+                                                                <td>verificar o status de um repositório se tem algo a commitar, por exemplo. Irá mostrar em vermelho ou verde, dependendo se está ou não no container</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>git add nomeDoArquivo</td>
-                                                                <td>colocar nomeDoArquivo nao comitado na stage area.</td>
+                                                                <td>git add meuArquivo</td>
+                                                                <td>colocar meuArquivo não comitado na stage área.</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git add -A ou git add *</td>
-                                                                <td>colocar TODOS arquivos nao comitados, em vermelho, na stage area, ficando verde</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>git remote add origin git@github.com:usuario/xyz.git</td>
-                                                                <td>conectar meu repositorio a um servidor remoto</td>
+                                                                <td>colocar TODOS arquivos não comitados, em vermelho, na stage área, ficando verde</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git commit -m "comentario sobre a alteração"</td>
-                                                                <td>faz commit do que estiver em verde na stage area</td>
+                                                                <td>faz commit do que estiver em verde na stage área, colocando o comentário sobre o que foi feito</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git log --oneline</td>
-                                                                <td>verifica os arquivos do repositorio e seus pais, HEAD, master, origin/master, etc...</td>
+                                                                <td>verifica os arquivos do repositório e seus pais, HEAD, master, origin/master, etc...</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git log --oneline --decorate --all</td>
-                                                                <td>verificar se tem alguem acima/abaixo de HEAD-></td>
+                                                                <td>verificar se tem alguém acima/abaixo de HEAD-></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git log --oneline --decorate --all --graph</td>
-                                                                <td>mostra tambem arvore grafo</td>
+                                                                <td>mostra também a árvore grafo</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git branch nomeDoBranch</td>
@@ -547,27 +551,23 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git branch -d nome-do-branch</td>
-                                                                <td>remove um branch do repositorio local, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente</td>
+                                                                <td>remove um branch do repositório local, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git branch -dr origin/branch_remoto</td>
-                                                                <td>remove um branch remoto do seu repositorio local, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente</td>
+                                                                <td>remove um branch remoto do seu repositório local, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git push origin --delete branch</td>
-                                                                <td>remove um branch do repositorio remoto, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente e tambem irá ser deletado la no repositorio remoto, como github</td>
+                                                                <td>remove um branch do repositório remoto, no qual ele ira desaparecer da listagem de branch ao dar um comando log localmente e tambem irá ser deletado la no repositório remoto, como github</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git checkout feature1</td>
-                                                                <td>muda de branch, apontando para o branch feature1 (comandos valem pra ele)</td>
+                                                                <td>muda de branch, apontando para o branch feature1 (comandos valem pra o checkout apontado)</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git merge feature1</td>
                                                                 <td>fundir arquivo do branch feature1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>git merge origin/master</td>
-                                                                <td>pesquisar</td>
                                                             </tr>
                                                             <tr class="danger">
                                                                 <td>ATENÇÃO:</td>
@@ -575,7 +575,7 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git push origin master</td>
-                                                                <td>atualizar, colocar arquivos do repositorio atual no repositorio remoto. Se meu repositorio local estiver atras do remoto, nao permite fazer essa atualização, pois vai perder o que tem na minha frente no remoto </td>
+                                                                <td>atualizar, colocar arquivos do repositório atual no repositório remoto. Se meu repositório local estiver atras do remoto, nao permite fazer essa atualização, pois vai perder o que tem na minha frente no remoto </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git push origin master --tags</td>
@@ -587,7 +587,7 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git pull origin master</td>
-                                                                <td>atualiza meu repositorio local, trazendo do remoto</td>
+                                                                <td>atualiza meu repositório local, trazendo do remoto</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git fetch</td>
@@ -595,7 +595,7 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git diff master origin/master</td>
-                                                                <td>verificar diferenças entre meu repositorio e o origin/master</td>
+                                                                <td>verificar diferenças entre meu repositório e o origin/master</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git reset --soft/mix/hard asbd</td>
@@ -603,7 +603,7 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git reflog</td>
-                                                                <td>arqmazena referencias do que foi feito</td>
+                                                                <td>arqmazena referências do que foi feito</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>git push --tags</td>
@@ -616,7 +616,7 @@ https://bootswatch.com/</a>
                                                             <tr>
                                                                 <td>git tag -a 1.0.0 -m “Versão inicial dp projeto”</td>
                                                                 <td>Cria tag</td>
-                                                            </tr>git tag -d 1.0.9
+                                                            </tr>
                                                             <tr>
                                                                 <td>git tag -d 1.0.9”</td>
                                                                 <td>remove tag local </td>
@@ -631,7 +631,7 @@ https://bootswatch.com/</a>
                                                             </tr>
                                                             <tr>
                                                                 <td>git remote set-url origin git@github.com:ppreyer/first_app.git</td>
-                                                                <td>atualizar caminho do repositorio remoto</td>
+                                                                <td>atualizar caminho do repositório remoto</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
